@@ -1,0 +1,28 @@
+{
+    "name": "webcoast/filedump-path-urls",
+    "title": "Filedump path URLs",
+    "description": "TYPO3 CMS extension to provide nice URLs for protected files",
+    "keywords": ["typo3", "cms", "fal", "secure", "download", "nice", "path", "url", "tracking", "analytics"],
+    "type": "typo3-cms-extension",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Thorben Nissen",
+            "email": "thorben@webcoast.dk"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "filedump_path_urls"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "WEBcoast\\FiledumpPathUrls\\": "Classes"
+        }
+    },
+    "require": {
+        "typo3/cms-core": "^11.5"
+    }
+}

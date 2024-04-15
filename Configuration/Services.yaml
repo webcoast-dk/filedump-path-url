@@ -1,0 +1,13 @@
+services:
+   _defaults:
+      autoconfigure: true
+      autowire: true
+      public: false
+      
+   WEBcoast\FiledumpPathUrls\:
+      resource: '../Classes/*'
+      
+   WEBcoast\FiledumpPathUrls\EventListener\GeneratePublicUrlListener:
+      tags:
+         -  name: 'event.listener'
+            identifier: 'filedump-path-url'
